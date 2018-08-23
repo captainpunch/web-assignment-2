@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+
+<form action ="form_handler.php" method="GET">
+
+    <p><label>Name:<input type = "text" name="name" size="20" maxlength="40" /></label></p>
+	<p><label>Select Background Color:<select name ="bgcolor">
+		<option><value=White> White </option>
+		<option><value=black> Black </option>
+		<option><value=Red> Red </option>
+		<option><value=Green> Green </option>
+		<option><value=blue> Blue </option>
+		<option><value=yellow> Yellow </option>
+		<option><value=orange> Orange </option>
+		<option><value=Purple> Purple </option>
+		<option><value=grey> Grey </option>
+		</select> 
+	<p><label>Select Text Color:<select name ="fgcolor">
+		<option><value=black> Black </option>
+		<option><value=White> White </option>
+		<option><value=Red> Red </option>
+		<option><value=Green> Green </option>
+		<option><value=blue> Blue </option>
+		<option><value=yellow> Yellow </option>
+		<option><value=orange> Orange </option>
+		<option><value=Purple> Purple </option>
+		<option><value=grey> Grey </option>
+	</select>
+	<p><input type = "submit" name="submit" value="submit" /></p>
+</form>
+<a href="form_handler.php?name=&bgcolor=blue&fgcolor=yellow&submit=submit"> Blue and Yellow</a><br>
+<a href="form_handler.php?name=&bgcolor=blue&fgcolor=green&submit=submit"> Blue and Green</a><br>
+<a href="form_handler.php?name=&bgcolor=purple&fgcolor=green&submit=submit"> Purple and Green</a><br>
+</body>
+</html>
